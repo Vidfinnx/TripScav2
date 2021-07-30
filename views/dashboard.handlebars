@@ -1,0 +1,40 @@
+<!-- ================ -->
+<!--        NavBar -->
+<!-- =================== -->
+<nav class="navbar p-2" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <h1 class="title is-4">Return Home</h1>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start"></div>
+    <div class="navbar-end">
+      {{#if loggedIn}}
+      <a id="search" class="navbar-item" href="/script">Search</a>
+      <a id="logout" class="navbar-item" href="/">Logout</a>
+      {{else}}
+      {{!-- <a id="search" class="navbar-item" href="/script">Search</a> --}}
+      <a id="login" onclick="openMore(1)" class="navbar-item">Login</a>
+      {{/if}}
+    </div>
+  </div>
+</nav>
+<div class="box">
+    <text id="dashboard">Welcome To {{username}}'S Dashboard</text>
+  <image id="r2d2"  src="/img/R2FINISH.png">
+  </image>
+</div>
+<h1 class="title is-1">SAVED SiTES </h1>
+<div id="app" class="columns is-multiline">
+  {{#each sites as |site|}}
+  {{> dashboard-siteinfo site}}
+  {{/each}}
+</div>

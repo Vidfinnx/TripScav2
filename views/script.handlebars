@@ -1,0 +1,41 @@
+<!-- ================ -->
+<!--        NavBar -->
+<!-- =================== -->
+<nav class="navbar p-2" role="navigation" aria-label="main navigation">
+    
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <h1 class="title is-4">Return Home</h1>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start"></div>
+        <div class="navbar-end">
+            {{#if loggedIn}}
+            <a id="search" class="navbar-item" href="/api/post/Site">Saved Sites</a>
+            <a id="search" class="navbar-item" href="/script">Search</a>
+            <a id="logout" class="navbar-item" href="/">Logout</a>
+            {{else}}
+            {{!-- <a id="search" class="navbar-item" href="/script">Search</a> --}}
+            <a id="login" onclick="openMore(1)" class="navbar-item">Login</a>
+            {{/if}}
+        </div>
+    </div>
+</nav>
+<h1 class="title">Search Trip Scav for your next destination!</h1>
+<div class="control  is-variable is-mobile is-tablet is-desktop is-widescreen is-fullhd">
+  <input class="input is-rounded" id="search-bar" type="text" style="width:40%" placeholder="Search a Country" autofocus="true">
+  <button onclick="doActionNoSpam()" class="button is-warning" id="search-button">Search</button>
+</div>
+
+<div id="app" class="columns is-multiline "></div>
+
+<script src="./js/script.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>

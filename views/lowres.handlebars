@@ -1,0 +1,62 @@
+<!-- ================ -->
+<!--        NavBar -->
+<!-- =================== -->
+<nav class="navbar p-2" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/highres">
+      {{#if loggedIn}}
+      <h1 class="title is-4">Welcome {{username}}: Low</h1>
+      {{else}}
+      <h1 class="title is-4">Setting: Low</h1> 
+       {{/if}}
+    </a>
+  
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start"></div>
+    <div class="navbar-end">
+      {{#if loggedIn}}
+      <a id="search" class="navbar-item" href="/api/post/Site">Saved Sites</a>
+      <a id="search" class="navbar-item" href="/script">Search</a>
+      <a id="logout" class="navbar-item" href="/">Logout</a>
+      {{else}}
+      {{!-- <a id="search" class="navbar-item" href="/script">Search</a> --}}
+      <a id="login" onclick="openMore(1)" class="navbar-item">Login</a>
+      {{!-- Called onclick function to open modal can be done with buttons as well --}}
+      <a id="signup" onclick="openMore(0)" class="navbar-item">Signup</a>
+      {{/if}}
+    </div>
+  </div>
+</nav>
+{{!-- Low Res View Slide Show --}}
+<div style="z-index:1;" class="responsive-google-slides">
+  <iframe
+    src="https://docs.google.com/presentation/d/e/2PACX-1vRnxMpVbaigiMLSd4-t_G2bkqWeG66FCozVXWk6C5-_VvDQ3Vjel0x6e3081_ogqHpeLB1q5bquZ5Tt/embed?start=true&loop=true&delayms=2000&rm=minimal"></iframe>
+</div>
+<div class="responsive-google-slides2">
+  <iframe
+    src="https://docs.google.com/presentation/d/e/2PACX-1vR_GQ4zHBxg3K7LcAmSzPPhAY_4BpuK44mt1kjAVe6taBK7Hot5Lojor0WUaPh4VwLUn0uClO8V9ASb/embed?start=true&loop=true&delayms=3000&rm=minimal"
+    frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+{{#if loggedIn}}
+{{else}}
+<a onclick="openMore(0)">
+  <div id="targetboxdiv">
+    <figure class="image is-3by1 has-text-centered">
+      <img id="targetbox" src="../img/Targetcomp.gif" alt="Broken Image"><text id="boxtext">Signup</text>
+    </figure>
+  </div>
+</a>
+{{/if}}
+<div class="Desc">
+  <text>Ever wondered what is out there to see in the world?<br>
+    Well wonder no more!<br> Trip Scav is here for you!<br>Sign up!<br>
+    Search your destination country! Save the sites you wish to see!</text>
+</div>

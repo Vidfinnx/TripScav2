@@ -1,0 +1,35 @@
+{
+  "name": "tripscav",
+  "version": "1.0.0",
+  "description": "Search and save popular sightseeing destintations all around the world!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eweagraff/TripScav.git"
+  },
+  "author": "Emily, David, Edgar, Veikko, Matt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eweagraff/TripScav/issues"
+  },
+  "homepage": "https://github.com/eweagraff/TripScav#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.4"
+  },
+  "devDependencies": {}
+}

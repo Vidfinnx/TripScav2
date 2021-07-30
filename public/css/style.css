@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Starwars";
+  src: url("../font/Starjhol.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+  cursor: url("../cursor/Milcur.cur"), default;
+  cursor: url("../cursor/Gsaber.cur"), pointer;
+}
+
+#targetbox{
+  border-radius:5%;
+}
+
+
+#targetboxdiv{
+  width: 21.5%;
+    position: absolute;
+    margin-left: 78%;
+    margin-top: -54%;
+}
+
+.image.is-3by1 {
+  padding-top: 33.3333%;
+  height: 37px;
+}
+
+#boxtext{
+  font-family: 'Starwars';
+  color: yellow;
+  font-size: 3vw;
+}
+
+
+
+#c3p {
+  max-width: 150px;
+  margin-top: -28%;
+}
+
+.savebutton {
+ margin-left:54%;
+}
+
+
+
+@media (min-width: 550px) and (max-width:685px){
+  .savebutton {
+    margin-left: 68%;
+}
+}
+
+@media (min-width: 900px) and (max-width:1024px){
+  .savebutton {
+    margin-left:66%;
+   }
+}
+
+@media (min-width: 686px) and (max-width: 768px){
+  #c3p {
+    max-width: 114px;
+  
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2560px){
+  .savebutton {
+    margin-left:54%;
+   }
+}
+
+@media (min-width: 3500px){
+#c3p {
+    max-width: 112px; 
+}
+.savebutton {
+  margin-left: 61%;
+}
+}
+
+
+
+#r2d2 {
+    height: auto;
+    max-width: 20vw;
+    margin-left: 55%;
+    margin-top: 5%;
+}
+
+
+
+#dashboard {
+  font-family: "Starwars";
+  color:lightskyblue;
+  width: 35vw;
+  font-size: 6vw;
+  text-align: center;
+  display: block;
+  animation: blinker .025s ease infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+.Desc {
+  font-size:40px;
+  color:gold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+}
+
+
+#bluetext {
+  margin: 61px auto;
+  width: 70%;
+}
+
+
+@media (max-width:550px){
+
+}
+
+
+
+#Intro {
+  font-size: 3.5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: royalblue;
+  text-align:left;
+}
+
+
+
+.image.is-128x128 {
+  max-height: 128px;
+  max-width: 200px;
+}
+
+
+.image1{
+  width:100%;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 233px;
+
+}
+
+.hero__media-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+#bandbutton{
+  font-size:18px;
+}
+.flex-child {
+  flex: 0 1 auto;
+  text-align:center;
+}  
+
+.flex-child2 {
+  flex: 0 1 auto;
+  max-width:350px;
+}  
+
+
+
+.Bandchoice{
+  font-family: "Starwars";
+  color:yellow;
+}
+
+#logo {
+  max-width: 25%;
+  max-height:25%;
+
+}
+
+.background {
+  background-color: black;
+}
+
+
+.box{
+  background-color:black;
+  width:100%;
+  height:100%;
+
+}
+  .responsive-google-slides2 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+    z-index:-1;
+  }
+  .responsive-google-slides2 iframe {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+/* New Google Slides Position and Shape Reviews*/
+.responsive-google-slides {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 77px;
+}
+.responsive-google-slides iframe {
+  width: 24vw;
+  height: 24vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+}
+
+/* Nav Bar Stuff */
+.navbar {
+  background-color: black;
+}
+
+.navbar-item .navbar-link {
+  color: yellow;
+  display: block;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  background-color: var(--dark-color);
+}
+
+.navbar-menu {
+  color: yellow;
+  box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+  padding: 0.5rem 0;
+}
+
+.navbar-menu.is-active {
+  background-color: transparent;
+}
+
+a.navbar-item {
+  color: yellow !important;
+  font-family: "Starwars";
+}
+
+/* Navbar Logo */
+.title {
+  color: yellow;
+  font-family: "Starwars";
+}
+
+.navbar-burger{
+  color:red;
+}
+
+a:hover {
+  color:red;
+}
+
+#event_name {
+  color: red;
+}
+
+.user {
+  color: yellow;
+  background-color: black;
+  padding: 1em;
+  margin: 1em;
+  /* border-bottom: 1px solid yellow; */
+  /* background-color: rgb(25, 25, 25); */
+  /* background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(25, 25, 25)); */
+  background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(0, 0, 0));
+}
+
+.image-size {
+  /* width: 300px; */
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+#search-bar {
+  margin-left: 28%;
+  /* width: 40%; */
+  /* margin: 0 auto; */
+  display: inline-block;
+}
+
+.border {
+  border-bottom: 1px solid yellow;
+  /* margin: 1em; */
+}
+
+.font {
+  /* font-size: 2px; */
+  font-weight: bold;
+}
