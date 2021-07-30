@@ -207,7 +207,7 @@ function input() {
     <div class="user">
       <div id="site"><span class="font">Site:</span> ${event.name}</div>
       <div id="city"><span class="font">City:</span> ${city}</div>
-      <div id="rating"><span class="font">Rating:</span> ${roundedScore}/10.00 <a class="savebutton"><img id="c3p" src=url(/img/c3psav.png)></a></div>
+      <div id="rating"><span class="font">Rating:</span> ${roundedScore}/10.00 <a class="savebutton"><img id="c3p" src= /img/c3psav.png></a></div>
       <p id="picture"><img class= "image-size" src="${event.images.length ? event.images[0].sizes.medium.url : 'https://josselyn.org/wp-content/themes/qube/assets/images/no-image/No-Image-Found-400x264.png'}" alt="${event.name}" /></p>
       <div id="description"><span class="font">Description:</span> ${event.snippet}</div>
     </div>
