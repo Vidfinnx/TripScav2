@@ -44,7 +44,7 @@ Site.init(
     
     },
     picture: {
-      type: DataTypes.STRING,
+      type: DataTypes.BLOB,
       allowNull: false,
       validate: {
         notEmpty:true,
