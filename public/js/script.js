@@ -75,7 +75,7 @@ function makeButtons() {
       });
       if (response.ok) {
         event.target.parentElement.setAttribute("id", "disabled")
-        event.target.setAttribute("src", ".../img/c3psaved.png")
+        event.target.setAttribute("src", "../img/c3psaved.png")
         console.log('success');
       } else {
         alert(response.statusText);
