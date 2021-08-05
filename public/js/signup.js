@@ -19,7 +19,7 @@ async function signupFormHandler(event) {
             console.log('success');
 
 
-            document.location.replace('/api/post/Site');
+            location.reload();
 
         } else {
             // alert(response.statusText);

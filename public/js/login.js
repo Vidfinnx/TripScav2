@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
     });
 
     if (response.ok) {
-      location.reload();
+      document.location.replace('/api/post/Site');
     } else {
       // alert(response.statusText);
     }
