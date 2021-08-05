@@ -5,6 +5,9 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 require("dotenv").config();
 var axios = require("axios");
+var compression = require('compression')
+
+
 
 //const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
@@ -14,6 +17,7 @@ const SequelizeStore = require('connect-session-sequelize')
 
 const app = express();
 const PORT = process.env.PORT || 3006;
+app.use(compression());
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({});
