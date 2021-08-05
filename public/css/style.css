@@ -10,6 +10,38 @@ html {
   cursor: url("../cursor/Gsaber.cur"), pointer;
 }
 
+@media (max-width:415px){
+  #marquee{
+    right:15%;
+  }
+}
+@media (min-width:416px){
+  #marquee{
+    right:8%;
+  }
+}
+
+
+@media (min-width:1024px){
+  #marquee{
+    visibility:hidden;
+  }}
+
+
+  .marqueehidden{
+  visibility:hidden;
+}
+
+#marquee {
+  font-family: "Starwars";
+  color: yellow;
+  animation: blinker 1.5s linear infinite;
+  font-size: 1.5rem;
+  top: 20%;
+  position: absolute;
+}
+
+
 #targetbox{
   border-radius:5%;
 }
