@@ -28,7 +28,9 @@ Run npm install to install all the dependencies
 
 ## Usage
 
-[Deployed Site](https://vtripscav.herokuapp.com)
+[Deployed Site](http://vtripscav.herokuapp.com)
+
+**MUST BE RAN ON HTTP INSTEAD OF HTTPS DUE TO API LIMITATIONS**
 
 To run locally:
 

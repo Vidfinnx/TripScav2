@@ -153,7 +153,7 @@ function search() {
 
   axios(config)
     .then(function (response) {
-      console.log(response);
+      // console.log(response);
       console.log(response.data[0].alpha2Code.toLowerCase());
       countryCode = response.data[0].alpha2Code.toLowerCase();
       countryCodeLower = countryCode.toLowerCase();
