@@ -147,15 +147,16 @@ function search() {
 
   var config = {
     method: "get",
-    url: `https://restcountries.eu/rest/v2/name/${searchText}`,
+    url: `http://api.countrylayer.com/v2/name/${searchText}?access_key=0c250cdd4c395d09ed702175c6c3d3df`,
     headers: {},
   };
 
   axios(config)
     .then(function (response) {
+      console.log(response);
       console.log(response.data[0].alpha2Code.toLowerCase());
       countryCode = response.data[0].alpha2Code.toLowerCase();
-      // countryCodeLower = countryCode.toLowerCase();
+      countryCodeLower = countryCode.toLowerCase();
       input();
       // return countryCodeLower;
     })
@@ -208,7 +209,7 @@ function input() {
       <div id="site"><span class="font">Site:</span> ${event.name}</div>
       <div id="city"><span class="font">City:</span> ${city}</div>
       <div id="rating"><span class="font">Rating:</span> ${roundedScore}/10.00 <a class="savebutton"><img id="c3p" src= "/img/c3psav.png"></a></div>
-      <p id="picture"><img class= "image-size" src="${event.images.length ? event.images[0].sizes.medium.url : 'https://josselyn.org/wp-content/themes/qube/assets/images/no-image/No-Image-Found-400x264.png'}" alt="${event.name}" /></p>
+      <p id="picture"><img class= "image-size" src="${event.images.length ? event.images[0].sizes.medium.url : '/img/noimg.png'}" alt="${event.name}" /></p>
       <div id="description"><span class="font">Description:</span> ${event.snippet}</div>
     </div>
    </div>`;
