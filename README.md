@@ -1,8 +1,12 @@
-# TripScav
+# TripScav Version 2.0
 
 ## Description
 
 The following application creates a visually appealing experience for the user which allows them to search places around the world and their top sightseeing attractions! All sights are shown based on popularity.
+
+This is a solo refactoring/continuation and maintained version 2.0 of my previous group project which has many rich features added such as low bandwith and high bandwith versions of the site for varied connections and devices.
+
+Very Easy To Use, Just Signup to create your own personal profile and Begin your Vacation Destination Search by Country, Save the Sites you would love to see!
 
 ## Technologies
 
